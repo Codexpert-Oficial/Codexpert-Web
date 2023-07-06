@@ -1,16 +1,16 @@
 header {
   position: fixed;
-  height: 95px;
+  height: 80px;
   background-color: rgb(10, 10, 10);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.739);
+  box-shadow: 0px 0px 30px 5px black;
   z-index: 100;
 }
 
 .logo {
-  height: 80px;
+  height: 70px;
 }
 
 .header__nav {
@@ -21,11 +21,16 @@ header {
   background-color: rgb(10, 10, 10);
 }
 
+.nav__menu__container {
+  display: none;
+  cursor: pointer;
+}
+
 .nav__menu {
   color: rgb(217, 217, 217);
 }
 
-.nav__right {
+.nav__elements__container {
   display: flex;
   align-items: center;
   margin-right: 25px;
@@ -38,9 +43,56 @@ header {
 
 .nav__element {
   margin: 5px 25px;
+  position: relative;
+}
+
+.nav__element__link::after {
+  content: " ";
+  left: 0px;
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background: #f33636;
+  transition: width 0.5s;
+  margin-top: 30px;
+  z-index: 200;
+}
+
+.nav__element__link:hover::after {
+  width: 100%;
 }
 
 .header__nav {
   width: 100vw;
   max-width: 1920px;
+}
+
+.nav__elemet__switch {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch__background {
+  width: 64px;
+  background: rgb(27, 27, 27);
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid rgb(217, 217, 217);
+  display: flex;
+  transition: all 1s linear
+}
+
+.switch__circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(217, 217, 217);
+  transition: all 0.3s ease
+}
+
+.switch__circle-active {
+  transform: translateX(30px);
 }
