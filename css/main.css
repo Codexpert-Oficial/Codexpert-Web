@@ -347,18 +347,22 @@
   transition: color 0.2s ease-in-out;
 }
 
-.bi-github:hover {
+.workTeam__link-github:hover,
+.footer__link-github:hover {
   color: rgb(255, 106, 0);
 }
 
-.bi-linkedin:hover {
+.workTeam__link-linkedin:hover,
+.footer__link-linkedin:hover {
   color: #0b66c3;
 }
 
-.bi-instagram:hover {
+.workTeam__link-instagram:hover,
+.footer__link-instagram:hover {
   color: #d41c57;
 }
 
-.bi-twitter:hover {
+.workTeam__link-twitter:hover,
+.footer__link-twitter:hover {
   color: #1d93e5;
 }
