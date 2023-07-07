@@ -8,7 +8,13 @@
   <link rel="shortcut icon" href="../imgs/iconos/isologotipo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../css/estilo.css" />
   <link rel="stylesheet" href="../css/nav.css" />
-  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/main/start.css" />
+  <link rel="stylesheet" href="../css/main/proyects.css" />
+  <link rel="stylesheet" href="../css/main/aboutUs.css" />
+  <link rel="stylesheet" href="../css/main/workTeam.css" />
+  <link rel="stylesheet" href="../css/main/comments.css" />
+  <link rel="stylesheet" href="../css/main/contact.css" />
+  
   <link rel="stylesheet" href="../css/footer.css" />
 </head>
 
@@ -405,15 +411,70 @@
           </ul>
       </section>
     </article>
-    <!-- <article class="comments">
+    <article class="comments">
       <h3 class="comments__title">Comentarios</h3>
       <section class="comments__container">
-        <div class="comment__carrousel">
-
+        <div class="comments__arrow__container comments__arrow__container-disabled comments__arrow__container-left">
+          <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </div>
+        <div class="comments__slider">
+          <div class="comment__element comment__element-active" data-position="1">
+            <div class="comment__img__container">
+              <img src="/imgs/mathias.png" alt="" class="comment__img">
+            </div>
+            <h6 class="comment__name">Usuario</h6>
+            <p class="comment__from">Desde Facebook</p>
+            <div class="comment__description">
+              <p class="comment__testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere et corporis possimus sint eligendi explicabo quo suscipit, eum, in consequuntur neque reprehenderit commodi fuga incidunt eos asperiores! Deserunt tempore quibusdam molestiae!</p>
+            </div>
+          </div>
+          <div class="comment__element" data-position="2">
+            <div class="comment__img__container">
+              <img src="/imgs/brandon.png" alt="" class="comment__img">
+            </div>
+            <h6 class="comment__name">Usuario</h6>
+            <p class="comment__from">Desde Instagram</p>
+            <div class="comment__description">
+              <p class="comment__testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere et corporis possimus sint eligendi explicabo quo suscipit, eum, in consequuntur neque reprehenderit commodi fuga incidunt eos asperiores! Deserunt tempore quibusdam molestiae!</p>
+            </div>
+          </div>
+          <div class="comment__element" data-position="3">
+            <div class="comment__img__container">
+              <img src="/imgs/nicolas.png" alt="" class="comment__img">
+            </div>
+            <h6 class="comment__name">Usuario</h6>
+            <p class="comment__from">Desde Twitter</p>
+            <div class="comment__description">
+              <p class="comment__testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere et corporis possimus sint eligendi explicabo quo suscipit, eum, in consequuntur neque reprehenderit commodi fuga incidunt eos asperiores! Deserunt tempore quibusdam molestiae!</p>
+            </div>
+          </div>
+          <div class="comment__element" data-position="4">
+            <div class="comment__img__container">
+              <img src="/imgs/mathias.png" alt="" class="comment__img">
+            </div>
+            <h6 class="comment__name">Usuario</h6>
+            <p class="comment__from">Desde Instagram</p>
+            <div class="comment__description">
+              <p class="comment__testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere et corporis possimus sint eligendi explicabo quo suscipit, eum, in consequuntur neque reprehenderit commodi fuga incidunt eos asperiores! Deserunt tempore quibusdam molestiae!</p>
+            </div>
+          </div>
+          <div class="comment__element" data-position="5">
+            <div class="comment__img__container">
+              <img src="/imgs/nicolas.png" alt="" class="comment__img">
+            </div>
+            <h6 class="comment__name">Usuario</h6>
+            <p class="comment__from">Desde Twitter</p>
+            <div class="comment__description">
+              <p class="comment__testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere et corporis possimus sint eligendi explicabo quo suscipit, eum, in consequuntur neque reprehenderit commodi fuga incidunt eos asperiores! Deserunt tempore quibusdam molestiae!</p>
+            </div>
+          </div>
+        </div>
+        <div class="comments__arrow__container comments__arrow__container-right">
+          <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
         </div>
       
       </section>
-    </article> -->
+    </article> 
     <article class="contact" id="contact-position">
       <h3 class="contact__title">Contáctanos</h3>
       <form action="" method="post" class="contact__form">
@@ -496,5 +557,6 @@
 </body>
 
 <script src="../js/nav.js"></script>
+<script src="../js/comments.js"></script>
 
 </html>

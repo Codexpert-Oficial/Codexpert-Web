@@ -1,0 +1,100 @@
+
+.workTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1080' height='500' preserveAspectRatio='none' viewBox='0 0 1080 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1096%26quot%3b)' fill='none'%3e%3crect width='1080' height='500' x='0' y='0' fill='rgba(39%2c 39%2c 39%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c74 C 72%2c101.6 216%2c212.8 360%2c212 C 504%2c211.2 576%2c84.6 720%2c70 C 864%2c55.4 1008%2c125.2 1080%2c139L1080 500L0 500z' fill='rgba(42%2c 42%2c 42%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c321 C 108%2c332.4 324%2c385 540%2c378 C 756%2c371 972%2c304.4 1080%2c286L1080 500L0 500z' fill='rgba(47%2c 47%2c 47%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1096'%3e%3crect width='1080' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    min-height: 900px;
+  }
+  
+  .workTeam__title {
+    margin: 20px;
+    margin-bottom: 50px;
+    font-size: 72px;
+    text-align: center;
+    color: rgb(217, 217, 217);
+  }
+  
+  .workTeam__content {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 50px;
+  }
+  
+  .workTeam__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+  
+    background-size: cover;
+    min-width: 250px;
+    min-height: 500px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.43);
+  }
+  
+  #brandon {
+    background-image: url("/imgs/brandon.png");
+  }
+  
+  #nicolas {
+    background-image: url("/imgs/nicolas.png");
+  }
+  
+  #mathias {
+    background-image: url("/imgs/mathias.png");
+  }
+  
+  .workTeam__element__title,
+  .workTeam__element__links {
+    margin: 2px 0px;
+    min-width: 250px;
+    padding: 5px 20px;
+    background-color: #0000003d;
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+  }
+  
+  .workTeam__element__title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 390px;
+  }
+  
+  .workTeam__element__links {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .workTeam__element__link {
+    margin: 0px 7px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .workTeam__link-github:hover,
+  .footer__link-github:hover {
+    color: rgb(255, 106, 0);
+  }
+  
+  .workTeam__link-linkedin:hover,
+  .footer__link-linkedin:hover {
+    color: #0b66c3;
+  }
+  
+  .workTeam__link-instagram:hover,
+  .footer__link-instagram:hover {
+    color: #d41c57;
+  }
+  
+  .workTeam__link-twitter:hover,
+  .footer__link-twitter:hover {
+    color: #1d93e5;
+  }
+  
