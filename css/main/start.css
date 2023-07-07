@@ -1,59 +1,58 @@
 .start {
-    width: 100%;
-    height: 100vh;
-    max-height: 1080px;
-    display: flex;
-    justify-content: center;
-    background-image: url(/imgs/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .start__background {
-    margin-top: 80px;
-    font-family: system-ui;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    color: rgb(217, 217, 217);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 0, 0, 0.2) 0%,
-      rgba(255, 0, 0, 0.1) 13%,
-      rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0, 0) 70%,
-      rgba(255, 0, 0, 0.1) 87%,
-      rgba(255, 0, 0, 0.2) 100%
-    );
-  }
-  
-  .start__title {
-    font-size: 110px;
-    margin: 0 0 20px 0;
-  }
-  
-  .start__description {
-    font-size: 30px;
-    width: 750px;
-    text-align: center;
-  }
-  
-  .start__icon__container {
-    display: flex;
-    height: 0;
-    z-index: 50;
-    transform: translateY(-100px);
-    transition: all 0.3s;
-  }
-  
-  .start__icon__container:hover {
-    transform: translateY(-90px);
-  }
-  
-  .start__icon {
-    transform: scaleX(1.4);
-    color: rgb(217, 217, 217);
-  }
-  
+  width: 100%;
+  height: 100vh;
+  max-height: 1080px;
+  display: flex;
+  justify-content: center;
+  background-image: url(/imgs/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.start__background {
+  margin-top: 80px;
+  font-family: system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: rgb(217, 217, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.2) 0%,
+    rgba(255, 0, 0, 0.1) 13%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(255, 0, 0, 0.1) 87%,
+    rgba(255, 0, 0, 0.2) 100%
+  );
+}
+
+.start__title {
+  font-size: 110px;
+  margin: 0 0 20px 0;
+}
+
+.start__description {
+  font-size: 30px;
+  width: 750px;
+  text-align: center;
+}
+
+.start__icon__container {
+  display: flex;
+  height: 0;
+  z-index: 50;
+  transform: translateY(-100px);
+  transition: all 0.3s;
+}
+
+.start__icon__container:hover {
+  transform: translateY(-90px);
+}
+
+.start__icon {
+  transform: scaleX(1.4);
+  color: rgb(217, 217, 217);
+}
