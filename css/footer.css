@@ -12,6 +12,8 @@ footer {
   align-items: center;
   padding-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .footer__container {
