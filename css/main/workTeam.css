@@ -4,7 +4,6 @@
   justify-content: center;
   flex-direction: column;
   background-size: cover;
-  min-height: 900px;
 }
 
 .workTeam__title {
@@ -12,27 +11,26 @@
   margin-bottom: 50px;
   font-size: 72px;
   text-align: center;
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
 }
 
 .workTeam__content {
   display: flex;
-  justify-content: space-between;
-  width: 1000px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .workTeam__element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d2d2d2;
   border-radius: 10px;
-
   background-size: cover;
-  min-width: 250px;
+  min-width: 300px;
   min-height: 500px;
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.43);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 #brandon {
@@ -51,10 +49,10 @@
 .workTeam__element__links {
   margin: 2px 0px;
   min-width: 250px;
-  padding: 5px 20px;
+  padding: 5px 30px;
   background-color: #0000003d;
   backdrop-filter: blur(10px);
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .workTeam__element__title {
@@ -76,22 +74,18 @@
   transition: color 0.2s ease-in-out;
 }
 
-.workTeam__link-github:hover,
-.footer__link-github:hover {
+.workTeam__link-github:hover {
   color: rgb(255, 106, 0);
 }
 
-.workTeam__link-linkedin:hover,
-.footer__link-linkedin:hover {
+.workTeam__link-linkedin:hover {
   color: #0b66c3;
 }
 
-.workTeam__link-instagram:hover,
-.footer__link-instagram:hover {
+.workTeam__link-instagram:hover {
   color: #d41c57;
 }
 
-.workTeam__link-twitter:hover,
-.footer__link-twitter:hover {
+.workTeam__link-twitter:hover {
   color: #1d93e5;
 }

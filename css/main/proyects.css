@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   background-size: cover;
-  padding-block: 100px;
+  padding: 100px 0px;
 }
 
 .proyects__title {
@@ -12,7 +12,7 @@
   margin-bottom: 0;
   font-size: 72px;
   text-align: center;
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
 }
 
 .proyects__container {
@@ -40,9 +40,9 @@
 }
 
 .proyect__content {
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
   backdrop-filter: blur(20px);
-  background-color: rgba(240, 248, 255, 0.075);
+  background-color: var(--content-bg-color);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -67,5 +67,6 @@
   height: 2px;
   width: 100%;
   margin-top: 20px;
-  background-color: rgb(144, 144, 144);
+  background-color: var(--text-color);
+  opacity: 0.4;
 }

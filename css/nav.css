@@ -1,12 +1,17 @@
 header {
   position: fixed;
   height: 80px;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--header-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 30px 5px black;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.751);
   z-index: 100;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -18,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(10, 10, 10);
+  background-color: var(--header-bg-color);
 }
 
 .nav__menu__container {
@@ -27,7 +32,7 @@ header {
 }
 
 .nav__menu {
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
 }
 
 .nav__elements__container {
@@ -52,7 +57,7 @@ header {
   position: absolute;
   width: 0;
   height: 4px;
-  background: #f33636;
+  background: var(--red);
   border-radius: 2px;
   transition: width 0.4s;
   margin-top: 35px;
@@ -68,6 +73,10 @@ header {
   max-width: 1920px;
 }
 
+.nav__element {
+  color: var(--text-color);
+}
+
 .nav__elemet__switch {
   width: 64px;
   height: 64px;
@@ -79,10 +88,10 @@ header {
 
 .switch__background {
   width: 64px;
-  background: rgb(27, 27, 27);
+  background: var(--switch-bg-color);
   height: 32px;
   border-radius: 20px;
-  border: 1px solid rgb(217, 217, 217);
+  border: 2px solid var(--text-color);
   display: flex;
   align-items: center;
   padding-left: 3px;
@@ -93,10 +102,15 @@ header {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: rgb(217, 217, 217);
+  background-color: var(--text-color);
+  background-image: url("../imgs/sun.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50%;
   transition: all 0.3s ease;
 }
 
 .switch__circle-active {
-  transform: translateX(30px);
+  background-image: url("../imgs/moon.svg");
+  transform: translateX(27px);
 }

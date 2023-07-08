@@ -9,7 +9,7 @@
 .comments__title {
   font-size: 72px;
   text-align: center;
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
   margin-bottom: 0;
 }
 
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 30px 30px 20px 20px;
-  border: #454545 3px solid;
+  border: var(--comment-border-color) 3px solid;
   transform: scale(0.9);
   filter: opacity(0.5);
   backdrop-filter: blur(10px);
@@ -46,11 +46,11 @@
   transition: all 0.5s ease-in-out;
   transform: scale(1);
   filter: opacity(1);
-  border: #f33636 3px solid;
+  border: var(--red) 3px solid;
 }
 
 .comment__user {
-  background: rgba(19, 19, 19, 0.394);
+  background: var(--comment-user-bg-color);
   display: flex;
   align-items: center;
   padding: 20px 0;
@@ -66,7 +66,7 @@
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: #424242 5px solid;
+  border: var(--comment-border-color) 5px solid;
 }
 
 .comment__name__container {
@@ -76,32 +76,33 @@
 .comment__name {
   font-size: 60px;
   margin: 0;
-  color: rgb(217, 217, 217);
+  color: var(--text-color);
 }
 
 .comment__from {
   margin: 0;
   font-size: 20px;
   padding: 0px 5px;
-  color: rgb(193, 193, 193);
+  color: var(--text-color);
+  opacity: 0.7;
 }
 
 .comment__description {
   width: 100%;
   max-width: 800px;
   text-align: center;
-  background-color: rgb(25, 25, 25);
+  background-color: var(--comment-bg-color);
   border-radius: 0px 0px 20px 20px;
   display: flex;
   justify-content: center;
-  border-top: 3px solid rgb(19, 19, 19);
   padding: 15px 0px;
 }
 
 .comment__testimonial {
   max-width: 600px;
   font-size: 25px;
-  color: rgb(193, 193, 193);
+  color: var(--text-color);
+  opacity: 0.8;
 }
 
 .comments__arrow__container {
@@ -112,7 +113,7 @@
   transition: all 0.3s ease;
   cursor: pointer;
   opacity: 0.6;
-  fill: aliceblue;
+  fill: var(--text-color);
 }
 
 .comments__arrow__container-left:hover {

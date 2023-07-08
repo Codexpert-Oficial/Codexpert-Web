@@ -2,8 +2,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(21, 21, 21);
-  color: rgb(217, 217, 217);
+  background-color: var(--footer-bg-color);
+  color: var(--text-color);
 }
 
 .footer {
@@ -62,9 +62,26 @@ footer {
   margin-top: -5px;
 }
 
+.footer__link-github:hover {
+  color: rgb(255, 106, 0);
+}
+
+.footer__link-linkedin:hover {
+  color: #0b66c3;
+}
+
+.footer__link-instagram:hover {
+  color: #d41c57;
+}
+
+.footer__link-twitter:hover {
+  color: #1d93e5;
+}
+
 .footer__line {
   height: 2px;
-  background-color: rgb(59, 59, 59);
+  background-color: var(--text-color);
+  opacity: 0.3;
   width: 80%;
 }
 

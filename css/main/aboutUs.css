@@ -48,7 +48,8 @@
 }
 
 .aboutUs__content__title {
-  color: rgba(217, 217, 217, 0.205);
+  color: var(--text-color);
+  opacity: 0.2;
   font-size: 200px;
   font-family: "kenyan", sans-serif;
   margin: 0;
@@ -57,7 +58,7 @@
 
 .aboutUs__content__container {
   display: flex;
-  border: #f33636 solid 6px;
+  border: var(--red) solid 6px;
   border-radius: 8px;
   margin-top: -0px;
 }
@@ -68,7 +69,7 @@
   max-width: 700px;
   padding: 40px;
   margin: 0px;
-  color: aliceblue;
+  color: var(--text-color);
   backdrop-filter: blur(20px);
 }
 
@@ -88,7 +89,7 @@
   font-weight: bold;
   line-height: 50px;
   margin: 0;
-  color: aliceblue;
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -115,7 +116,7 @@
 }
 
 .quote {
-  color: #f33636;
+  color: var(--red);
   position: absolute;
 }
 
