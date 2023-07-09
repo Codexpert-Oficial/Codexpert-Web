@@ -58,6 +58,7 @@
   display: flex;
   max-width: 300px;
   justify-content: center;
+  pointer-events: none;
 }
 
 #project__img__container-1:hover::after,
