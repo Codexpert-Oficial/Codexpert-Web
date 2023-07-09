@@ -1,7 +1,6 @@
 @font-face {
   font-family: "brunoAce";
   src: url("/fonts/michroma/Michroma-Regular.ttf") format("truetype");
-  font-style: normal;
   font-weight: 2000;
 }
 
@@ -30,7 +29,7 @@
 .start__title {
   margin: 0;
   font-size: 110px;
-  font-family: brunoAce;
+  font-family: brunoAce, Arial;
 }
 
 .start__description {

@@ -123,3 +123,8 @@
 .comments__arrow__container-right:hover {
   transform: translateX(10px);
 }
+
+.comments__arrow__container-disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
