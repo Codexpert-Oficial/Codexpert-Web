@@ -1,13 +1,14 @@
-.proyects {
+.projects {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-size: cover;
   padding: 100px 0px;
+  z-index: 10;
 }
 
-.proyects__title {
+.projects__title {
   margin: 20px;
   margin-bottom: 0;
   font-size: 72px;
@@ -15,7 +16,7 @@
   color: var(--text-color);
 }
 
-.proyects__container {
+.projects__container {
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -23,27 +24,74 @@
   flex-wrap: wrap;
 }
 
-.proyect {
+.project {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
   max-width: 550px;
   min-width: 400px;
+  overflow: hidden;
 }
 
-.proyect__img {
+#project__img__container-1::after {
+  content: url("../../imgs/html.svg") url("../../imgs/css.svg");
+}
+
+#project__img__container-2::after {
+  content: url("../../imgs/html.svg") url("../../imgs/css.svg")
+    url("../../imgs/js.svg");
+}
+
+#project__img__container-3::after {
+  content: url("../../imgs/html.svg") url("../../imgs/css.svg")
+    url("../../imgs/js.svg") url("../../imgs/php.svg")
+    url("../../imgs/mySQL.svg") url("../../imgs/docker.svg");
+}
+
+#project__img__container-1::after,
+#project__img__container-2::after,
+#project__img__container-3::after {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  max-width: 300px;
+  justify-content: center;
+}
+
+#project__img__container-1:hover::after,
+#project__img__container-2:hover::after,
+#project__img__container-3:hover::after {
+  opacity: 1;
+}
+
+.project__img {
   width: 100%;
-  height: auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  transition: filter 0.4s ease-in-out;
 }
 
-.proyect__content {
+.project__img:hover {
+  filter: blur(7px);
+}
+
+.project__img__container {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__content {
   color: var(--text-color);
   backdrop-filter: blur(20px);
   background-color: var(--content-bg-color);
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,17 +101,17 @@
   border-bottom-right-radius: 20px;
 }
 
-.proyect__title {
+.project__title {
   text-align: center;
   font-size: 35px;
   margin: 0;
 }
 
-.proyect__description {
+.project__description {
   font-size: 20px;
 }
 
-.proyect__line {
+.project__line {
   height: 2px;
   width: 100%;
   margin-top: 20px;
