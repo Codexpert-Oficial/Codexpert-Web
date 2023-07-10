@@ -1,6 +1,7 @@
 @font-face {
   font-family: "kenyan";
-  src: url("/fonts/kenyan_coffee/kenyan\ coffee\ rg.otf") format("truetype");
+  src: url("../../fonts/kenyan_coffee/kenyan\ coffee\ rg.otf")
+    format("truetype");
   font-style: normal;
   font-weight: 800;
 }
