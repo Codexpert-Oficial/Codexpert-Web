@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "brunoAce";
-  src: url("/fonts/michroma/Michroma-Regular.ttf") format("truetype");
-  font-weight: 2000;
+  font-family: "zeroesTwo";
+  src: url("../../fonts/ZeroesTwo.ttf") format("truetype");
+  font-weight: 600;
 }
 
 .start {
@@ -28,8 +28,8 @@
 
 .start__title {
   margin: 0;
-  font-size: 110px;
-  font-family: brunoAce, Arial;
+  font-size: 150px;
+  font-family: zeroesTwo, Arial;
 }
 
 .start__description {
