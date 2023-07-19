@@ -34,15 +34,15 @@
 }
 
 #brandon {
-  background-image: url("/imgs/brandon.png");
+  background-image: url("../../imgs/brandon.png");
 }
 
 #nicolas {
-  background-image: url("/imgs/nicolas.png");
+  background-image: url("../../imgs/nicolas.png");
 }
 
 #mathias {
-  background-image: url("/imgs/mathias.png");
+  background-image: url("../../imgs/mathias.png");
 }
 
 .workTeam__element__title,
@@ -88,4 +88,31 @@
 
 .workTeam__link-twitter:hover {
   color: #1d93e5;
+}
+
+
+
+
+@media (max-width: 500px) {
+  
+  .workTeam__title {
+    font-size: 45px
+  }
+
+  .workTeam__element {
+    min-width: 260px;
+    width: 260px;
+  }
+
+  #brandon, #nicolas, #mathias {
+    background-position: left 10% center;
+  }
+
+  .workTeam__element__title,
+  .workTeam__element__links {
+    width: 260px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
 }

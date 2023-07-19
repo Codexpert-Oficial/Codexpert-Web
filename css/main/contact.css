@@ -105,3 +105,30 @@ textarea::placeholder {
   box-shadow: 0px 0px 12px 1px var(--red);
   background-color: var(--button-hover-color);
 }
+
+
+@media (max-width: 500px) {
+
+  .contact__title {
+    margin: 0;
+    font-size: 45px
+  }
+  
+  .contact__form {
+    padding: 0 20px;
+  }
+
+  .contact__input, textarea {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .contact__button {
+    width: 100%;
+  }
+
+}
+

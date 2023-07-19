@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  padding: 100px;
+  padding: 30px;
   box-sizing: border-box;
 }
 
@@ -43,9 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   border-radius: 20px;
-  min-height: 500px;
 }
 
 .aboutUs__content__title {
@@ -88,7 +86,6 @@
 
 .values__title {
   font-weight: bold;
-  line-height: 50px;
   margin: 0;
   color: var(--text-color);
   text-decoration: underline;
@@ -135,4 +132,67 @@
 .quoteRight__background {
   width: 170px;
   position: absolute;
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+
+  #mission, #vision, #values {
+    justify-content: center;
+  }
+  
+  .values__content {
+    margin: 10px;
+  }
+
+  .values__content__description {
+    padding: 20px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .aboutUs__element {
+    padding: 25px;
+    margin: 40px 0;
+    box-sizing: border-box;
+  }
+  
+  .aboutUs__content {
+    margin: 0px;
+  }
+
+  .aboutUs__content__title {
+    font-size: 100px;
+  }
+
+  .quoteLeft__container, .quoteRight__container {
+    transform: scale(0.6);
+    display: none; /* hay que probar si se puede posicionar mejor */
+  }
+
+  .aboutUs__content__description {
+    padding: 20px;
+    font-size: 18px;
+    hyphens: auto;
+  }
+
+  .values__content__description {
+    padding: 10px;
+  }
+
+  .values__content {
+    padding: 10px;
+  }
+
+  .aboutUs__content__description,
+  .values__content__description,
+  .values__content {
+    backdrop-filter: blur(0);
+}
+
 }
