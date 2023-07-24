@@ -134,16 +134,13 @@
   position: absolute;
 }
 
-
-
-
-
 @media (max-width: 1280px) {
-
-  #mission, #vision, #values {
+  #mission,
+  #vision,
+  #values {
     justify-content: center;
   }
-  
+
   .values__content {
     margin: 10px;
   }
@@ -151,17 +148,15 @@
   .values__content__description {
     padding: 20px;
   }
-
 }
 
 @media (max-width: 650px) {
-
   .aboutUs__element {
     padding: 25px;
     margin: 40px 0;
     box-sizing: border-box;
   }
-  
+
   .aboutUs__content {
     margin: 0px;
   }
@@ -170,7 +165,8 @@
     font-size: 100px;
   }
 
-  .quoteLeft__container, .quoteRight__container {
+  .quoteLeft__container,
+  .quoteRight__container {
     transform: scale(0.6);
     display: none; /* hay que probar si se puede posicionar mejor */
   }
@@ -193,6 +189,5 @@
   .values__content__description,
   .values__content {
     backdrop-filter: blur(0);
-}
-
+  }
 }

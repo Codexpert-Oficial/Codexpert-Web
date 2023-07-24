@@ -51,7 +51,7 @@
 }
 
 .start__icon__background {
-  width: 100%
+  width: 1920px;
 }
 
 .start__icon__container {
@@ -69,10 +69,7 @@
   color: var(--text-color);
 }
 
-
-
 @media (max-width: 1280px) {
-
   .start__title {
     font-size: calc(4em + 4vw);
   }
@@ -84,7 +81,7 @@
 
 @media (max-width: 500px) {
   .start__title {
-    font-size: 45px
+    font-size: 45px;
   }
 
   .start__description {
