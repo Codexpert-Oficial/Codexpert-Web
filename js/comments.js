@@ -1,4 +1,3 @@
-
 arrowsLeft = document.querySelectorAll(".comments__arrow__container-left");
 arrowsRight = document.querySelectorAll(".comments__arrow__container-right");
 sliderContainer = document.querySelector(".comments__slider");

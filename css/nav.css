@@ -54,7 +54,6 @@ header {
   display: flex;
   align-items: center;
   margin-right: 25px;
-
 }
 
 .nav__subcontainer {
@@ -62,27 +61,43 @@ header {
   align-items: center;
 }
 
-.nav__element {
+.nav__element,
+.nav__element-section {
   margin: 5px 25px;
   position: relative;
-  color: var(--text-color);
 }
 
-.nav__element__link::after {
+.nav__element-section {
+  color: var(--text-color);
+  padding: 0 4px 4px 4px;
+  display: flex;
+}
+
+.nav__element__link {
+  z-index: 210;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__element-section:before {
   content: " ";
-  left: 0px;
+  left: 0;
+  bottom: 0;
   position: absolute;
-  width: 0;
-  height: 4px;
-  background: var(--red);
-  border-radius: 2px;
-  transition: width 0.4s;
-  margin-top: 35px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(253, 69, 69, 0.7);
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
   z-index: 200;
 }
 
-.nav__element__link:hover::after {
-  width: 100%;
+.nav__element-section:hover > .nav__element__link {
+  color: black;
+}
+
+.nav__element-section:hover::before {
+  opacity: 1;
 }
 
 .nav__element__icons {
@@ -102,13 +117,13 @@ header {
 .switch__background {
   width: 64px;
   background: var(--switch-bg-color);
-  height: 32px;
+  height: 36px;
   border-radius: 20px;
   border: 2px solid var(--text-color);
   display: flex;
   align-items: center;
-  padding-left: 3px;
   transition: all 1s linear;
+  padding: 3px;
   box-sizing: border-box;
 }
 
@@ -126,29 +141,26 @@ header {
 
 .switch__circle-active {
   background-image: url("../imgs/moon.svg");
-  transform: translateX(31px);
+  transform: translateX(28px);
 }
 
-
-
 @media (max-width: 1280px) {
-
-  .nav__element {
+  .nav__element,
+  .nav__element-section {
     margin: 10px;
   }
 
   .nav__element__link {
     font-size: calc(0.7em + 0.7vw);
   }
-  
-  .nav__elemet__switch, .nav__icon__translate {
+
+  .nav__elemet__switch,
+  .nav__icon__translate {
     scale: 0.7;
   }
-
 }
 
 @media (max-width: 800px) {
-
   header {
     max-width: 100%;
   }
@@ -188,10 +200,10 @@ header {
     box-sizing: border-box;
   }
 
-  .nav__elemet__switch, .nav__icon__translate {
+  .nav__elemet__switch,
+  .nav__icon__translate {
     scale: 1;
     width: 100%;
     left: 0;
   }
-
 }

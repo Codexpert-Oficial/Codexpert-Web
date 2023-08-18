@@ -9,7 +9,12 @@
   max-height: 1080px;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url("../../imgs/background.gif");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../../imgs/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -43,6 +48,7 @@
 
 .start__description span {
   color: var(--red);
+  text-shadow: 0 0 4px var(--red);
 }
 
 .start__container {
@@ -87,7 +93,6 @@
 }
 
 @media (max-width: 500px) {
-
   .start {
     height: calc(var(--vh, 1vh) * 100);
   }

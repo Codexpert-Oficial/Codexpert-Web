@@ -29,9 +29,12 @@
   width: 300px;
   min-height: 500px;
   border-radius: 10px;
-  background: #bbbbbb33;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='500' height='800' preserveAspectRatio='none' viewBox='0 0 500 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1031%26quot%3b)' fill='none'%3e%3crect width='500' height='800' x='0' y='0' fill='rgba(36%2c 36%2c 36%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c372.582C69.364%2c388.028%2c137.837%2c345.782%2c199.322%2c310.151C263.125%2c273.177%2c327.226%2c230.48%2c359.571%2c164.21C392.274%2c97.206%2c404.37%2c15.191%2c377.168%2c-54.229C351.346%2c-120.127%2c275.227%2c-146.22%2c220.393%2c-190.971C176.015%2c-227.189%2c141.276%2c-277.965%2c85.756%2c-292.058C31.005%2c-305.955%2c-22.263%2c-273.6%2c-78.339%2c-266.798C-148.502%2c-258.288%2c-236.513%2c-298.365%2c-285.136%2c-247.071C-333.178%2c-196.39%2c-298.027%2c-111.443%2c-291.515%2c-41.914C-286.384%2c12.876%2c-276.556%2c65.876%2c-251.25%2c114.742C-226.894%2c161.776%2c-186.379%2c194.559%2c-149.414%2c232.493C-100.783%2c282.4%2c-68.017%2c357.436%2c0%2c372.582' fill='%23212121'%3e%3c/path%3e%3cpath d='M500 1124.821C561.481 1129.112 616.151 1093.835 671.762 1067.268 735.201 1036.962 809.5419999999999 1017.854 847.623 958.754 887.3489999999999 897.102 904.836 814.172 879.1 745.494 854.04 678.621 772.798 656.727 717.506 611.53 673.172 575.29 641.067 522.808 586.2860000000001 506.138 531.28 489.399 472.557 502.543 417.88800000000003 520.3530000000001 364.43600000000004 537.767 317.818 568.094 277.108 606.863 232.96499999999997 648.902 191.421 694.787 173.531 753.061 153.877 817.079 138.123 892.001 171.79899999999998 949.884 205.24900000000002 1007.3779999999999 284.28700000000003 1013.034 342.985 1044.321 395.961 1072.558 440.114 1120.641 500 1124.821' fill='%23272727'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1031'%3e%3crect width='500' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   z-index: 50;
+  background-size: cover;
+  position: relative;
   box-sizing: border-box;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.273);
 }
 
 .workTeam__element__title,
@@ -47,8 +50,18 @@
   margin-top: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.397);
+  color: rgba(140, 140, 140, 0.397);
   cursor: default;
+}
+
+.workTeam__element__gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+  z-index: 60;
+  position: absolute;
+  border-radius: 9px;
+  pointer-events: none;
 }
 
 .workTeam__element__img {
@@ -61,10 +74,10 @@
   justify-content: center;
   align-items: end;
   pointer-events: none;
-  /* border-bottom: 4px solid var(--red); */
 }
 
-.workTeam__element__icon__right, .workTeam__element__icon__left {
+.workTeam__element__icon__right,
+.workTeam__element__icon__left {
   fill: rgba(217, 217, 217, 0.411);
   margin-bottom: 15px;
   cursor: pointer;
@@ -73,7 +86,8 @@
   pointer-events: auto;
 }
 
-.workTeam__element__icon__right, .workTeam__element__icon__left {
+.workTeam__element__icon__right,
+.workTeam__element__icon__left {
   transform: translateX(0px);
   opacity: 1;
 }
@@ -88,26 +102,27 @@
   opacity: 0;
 }
 
-.workTeam__element__icon__right:hover, .workTeam__element__icon__left:hover {
+.workTeam__element__icon__right:hover,
+.workTeam__element__icon__left:hover {
   fill: rgba(217, 217, 217, 0.795);
 }
 
 .brandon {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)), url("../../imgs/brandon-transparent.png");
+  background: url("../../imgs/brandon-transparent.png");
   background-position: left;
   background-size: cover;
   transition: all 0.9s ease;
 }
 
 .nicolas {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)), url("../../imgs/nicolas-transparent.png");
+  background: url("../../imgs/nicolas-transparent.png");
   background-position: left;
   background-size: cover;
   transition: all 0.9s ease;
 }
 
 .mathias {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)), url("../../imgs/mathias-transparent.png");
+  background: url("../../imgs/mathias-transparent.png");
   background-position: left;
   background-size: cover;
   transition: all 0.9s ease;
@@ -122,7 +137,9 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  transition: all 2s ease;
+  transition: all 0.3s ease;
+  z-index: 70;
+  opacity: 0;
 }
 
 .workTeam__element__link__container {
@@ -135,11 +152,11 @@
   margin: 0px 7px;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
-  filter: contrast(200%);
+  color: rgb(126, 126, 126);
 }
 
 .workTeam__link-github:hover {
-  color: rgb(255, 106, 0);
+  color: #ff6a00;
 }
 
 .workTeam__link-linkedin:hover {
@@ -154,13 +171,9 @@
   color: #1d93e5;
 }
 
-
-
-
 @media (max-width: 500px) {
-  
   .workTeam__title {
-    font-size: 45px
+    font-size: 45px;
   }
 
   .workTeam__element {
@@ -168,7 +181,9 @@
     width: 260px;
   }
 
-  #brandon, #nicolas, #mathias {
+  #brandon,
+  #nicolas,
+  #mathias {
     background-position: left 10% center;
   }
 
@@ -177,5 +192,4 @@
     width: 260px;
     box-sizing: border-box;
   }
-
 }

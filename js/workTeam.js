@@ -13,22 +13,24 @@ for (let i = 0; i < images.length; i++) {
             images[i].style.pointerEvents = "none"
             imagesArrowsLeft[i].classList.toggle("workTeam__element__icon__left-disabled");
             imagesArrowsRight[i].style.display = "none"
+            linksContainer[i].style.opacity = 1;
         }, 400);
     });
-    
+
     imagesArrowsLeft[i].addEventListener("click", () => {
         imagesArrowsLeft[i].classList.toggle("workTeam__element__icon__left-disabled");
         imagesArrowsRight[i].style.display = "flex"
         MoveImage(i);
-        setTimeout(() => {    
+        linksContainer[i].style.opacity = 0;
+        setTimeout(() => {
             images[i].style.pointerEvents = "all"
             imagesArrowsRight[i].classList.toggle("workTeam__element__icon__right-disabled");
             imagesArrowsLeft[i].style.display = "none"
+
         }, 400);
     });
 }
 
 const MoveImage = (i) => {
     images[i].classList.toggle("workTeam__element__img-right");
-    linksContainer[i].style.filter = "brightness(2)";
 }
