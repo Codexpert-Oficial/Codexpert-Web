@@ -30,4 +30,4 @@ const setInformationMessage = (title, description) => {
     }
 }
 
-closeInformationButton.addEventListener("click", closeInformationMessage());
+closeInformationButton.addEventListener("click", closeInformationMessage);
