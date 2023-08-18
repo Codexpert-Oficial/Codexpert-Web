@@ -9,13 +9,12 @@
   max-height: 1080px;
   display: flex;
   justify-content: center;
-  background-image: url("../../imgs/fondo.svg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url("../../imgs/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 .start__background {
@@ -31,6 +30,7 @@
   margin: 0;
   font-size: 150px;
   font-family: zeroesTwo, Arial;
+  z-index: 100;
 }
 
 .start__description {
@@ -38,6 +38,11 @@
   margin: 0;
   text-align: center;
   max-width: 73vw;
+  z-index: 100;
+}
+
+.start__description span {
+  color: var(--red);
 }
 
 .start__container {
@@ -82,6 +87,11 @@
 }
 
 @media (max-width: 500px) {
+
+  .start {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
   .start__title {
     font-size: 14vw;
   }

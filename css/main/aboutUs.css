@@ -70,18 +70,21 @@
   margin: 0px;
   color: var(--text-color);
   backdrop-filter: blur(20px);
-}
-
-.values__content__description {
-  padding: 10px 40px;
+  hyphens: auto;
 }
 
 .values__content {
   display: flex;
   flex-direction: column;
   max-width: 1100px;
-  padding: 20px;
+  padding: 40px;
+  margin: 0;
   backdrop-filter: blur(20px);
+  gap: 20px;
+}
+
+.values__content__description {
+  padding: 0;
 }
 
 .values__title {
@@ -152,13 +155,14 @@
 
 @media (max-width: 650px) {
   .aboutUs__element {
-    padding: 25px;
+    padding: 10px;
     margin: 40px 0;
     box-sizing: border-box;
   }
 
   .aboutUs__content {
     margin: 0px;
+    padding: 0;
   }
 
   .aboutUs__content__title {
@@ -174,7 +178,6 @@
   .aboutUs__content__description {
     padding: 20px;
     font-size: 18px;
-    hyphens: auto;
   }
 
   .values__content__description {
