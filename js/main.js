@@ -3,8 +3,8 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // mensaje de informacion
-let closeInformationButton = document.querySelector(".information__close__button");
-let informationContainer = document.querySelector(".information__container");
+const closeInformationButton = document.querySelector(".information__close__button");
+const informationContainer = document.querySelector(".information__container");
 let autoCloseTimeout; // almacena el id del timeout
 
 const closeInformationMessage = () => {

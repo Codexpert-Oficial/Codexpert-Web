@@ -1,29 +1,80 @@
 .contact {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 0px 300px 0px;
+  padding: 150px 0px 300px 0px;
   background-size: cover;
-  max-width: 800px;
+  justify-content: center;
+}
+
+.contact__red__line__contianer {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex: 1;
+}
+
+.line__comments-contact-down {
+  width: 480px;
+  height: 770px;
+  right: 0;
+  position: absolute;
+  transform: translateY(-550px);
+  
+  background-image: linear-gradient(var(--red), var(--red)), 
+                    linear-gradient(var(--red), var(--red)),
+                    linear-gradient(var(--red), var(--red));
+  background-repeat: no-repeat;
+  background-size: 50% 4px, 4px 100%, 50% 4px;
+  background-position: right bottom, center bottom, left top;
+}
+
+.contact__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 930px;
+}
+
+.line__contact-footer {
+  width: 100%;
+  height: 220px;
+  bottom: 0;
+  position: absolute;
+
+  background-image: linear-gradient(var(--red), var(--red));    
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: left bottom;
 }
 
 .contact__title {
-  margin: 10px;
+  margin: 30px;
   font-size: 72px;
+  line-height: 72px;
   text-align: center;
   color: var(--text-color);
 }
 
 .contact__container {
-  padding: 15px;
+  padding: 65px;
   width: 100%;
+  max-width: 800px;
+
+  background-image: linear-gradient(var(--red), var(--red)),
+                  linear-gradient(var(--red), var(--red)),
+                  linear-gradient(var(--red), var(--red)),
+                  linear-gradient(var(--red), var(--red)),  
+                  linear-gradient(var(--red), var(--red)),
+                  linear-gradient(var(--red), var(--red));           
+  background-repeat: no-repeat;
+  background-size: 4px 300px, 55px 4px, 4px 360px, 150px 4px, 120px 4px, 4px 60px;
+  background-position: left top, left top, right bottom, right bottom, right top, right top;
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
 .contact__info {
@@ -32,7 +83,6 @@
   flex-direction: column;
   width: calc(100% - 30px);
   gap: 10px;
-  margin: 15px;
 }
 
 .contact__input {
@@ -87,6 +137,7 @@ textarea::placeholder {
 }
 
 .contact__button {
+  margin-top: 10px;
   height: 55px;
   width: 120px;
   border-radius: 10px;
@@ -106,7 +157,21 @@ textarea::placeholder {
 }
 
 
+@media (max-width: 1150px) {
 
+  .contact__container, .red__line {
+    background: none;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .contact__form {
+    padding: 0 40px;
+  }
+
+}
 
 @media (max-width: 500px) {
 

@@ -136,6 +136,9 @@ body::-webkit-scrollbar-track {
   font-size: 18px;
 }
 
+
+
+
 @media (max-width: 650px) {
   .information__container {
     width: 100%;
