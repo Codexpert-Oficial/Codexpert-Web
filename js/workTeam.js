@@ -14,6 +14,7 @@ for (let i = 0; i < images.length; i++) {
             imagesArrowsLeft[i].classList.toggle("workTeam__element__icon__left-disabled");
             imagesArrowsRight[i].style.display = "none"
             linksContainer[i].style.opacity = 1;
+            linksContainer[i].style.pointerEvents = "all"
         }, 400);
     });
 
@@ -22,11 +23,11 @@ for (let i = 0; i < images.length; i++) {
         imagesArrowsRight[i].style.display = "flex"
         MoveImage(i);
         linksContainer[i].style.opacity = 0;
+        linksContainer[i].style.pointerEvents = "none"
         setTimeout(() => {
             images[i].style.pointerEvents = "all"
             imagesArrowsRight[i].classList.toggle("workTeam__element__icon__right-disabled");
             imagesArrowsLeft[i].style.display = "none"
-
         }, 400);
     });
 }

@@ -1,15 +1,4 @@
 
-// dark mode
-let swtichButton = document.querySelector(".nav__elemet__switch");
-let switchBackground = document.querySelector(".switch__background");
-let switchCircle = document.querySelector(".switch__circle");
-let darkMode = true;
-
-swtichButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    switchCircle.classList.toggle("switch__circle-active");
-})
-
 // nav mobile bars
 let barsMenuOpen = document.querySelector(".nav__menu__bars-open");
 let barsMenuClose = document.querySelector(".nav__menu__bars-close");
