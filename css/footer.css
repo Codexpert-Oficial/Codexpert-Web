@@ -31,6 +31,10 @@ footer {
   margin: 5px 20px;
 }
 
+.footer__element:hover {
+  text-decoration: underline;
+}
+
 .footer__links__container {
   display: flex;
   flex-direction: column;
